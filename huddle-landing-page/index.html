@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/499a3320ef.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Huddle landing page</title>
@@ -41,8 +42,8 @@
               Create connections with your users as you engage in genuine discussion.</p>
             <button type="button" name="button" class="GetBtn">Get Started For Free</button>
           </div>
-        </div>
-        <div class="col-md-7">
+        </div>                   <!-- AOS animation -->
+        <div class="col-md-7" data-aos="zoom-out" data-aos-duration="1600">
           <img src="css/images/illustration-mockups.svg" alt="" class="mockups-img">
         </div>
       </div>
@@ -51,8 +52,8 @@
 
   <!-- content -->
   <section class="content">
-    <section style="padding-top:5%;">
-      <div class="container">
+    <section style="padding-top:5%;"> <!-- AOS animation -->
+      <div class="container" data-aos="fade-up" data-aos-duration="1600">
         <div class="card">
           <div class="row">
             <div class="col-lg-5 order-lg-1 col-sm-12">
@@ -67,8 +68,8 @@
         </div>
       </div>
     </section>
-    <section style="padding-top:5%;">
-      <div class="container">
+    <section style="padding-top:5%;"> <!-- AOS animation -->
+      <div class="container" data-aos="fade-up" data-aos-duration="1600">
         <div class="card">
           <div class="row">
             <div class="col-lg-5 col-sm-12">
@@ -83,8 +84,8 @@
         </div>
       </div>
     </section>
-    <section style="padding-top:5%;">
-      <div class="container">
+    <section style="padding-top:5%;"> <!-- AOS animation -->
+      <div class="container" data-aos="fade-up" data-aos-duration="1600">
         <div class="card">
           <div class="row">
             <div class="col-lg-5 order-lg-1 col-sm-12">
@@ -101,8 +102,8 @@
     </section>
   </section>
 
-  <section class="content2">
-    <div class="community">
+  <section class="content2">  <!-- AOS animation -->
+    <div class="community" data-aos="fade-up" data-aos-duration="1600" >
       <h3>Ready To Build Your Community?</h3>
       <button type="button" name="button" class="GetBtn">Get Started For Free</button>
     </div>
@@ -167,6 +168,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    });
+  </script>
 </body>
 
 </html>
